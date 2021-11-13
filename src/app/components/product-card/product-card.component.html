@@ -1,0 +1,36 @@
+<div
+  *ngFor="let price of pricing; index as i"
+  class="col-md-3 mol-sm-6"
+>
+  <div class="pricingTable red">
+    <div class="pricingTable-header">
+      <h3 class="title">{{pricing[i][0]}}</h3>
+    </div>
+    <div class="row">
+      <div class="price-value col">
+        <span>Monthly plan</span><br>
+        <span class="amount">{{pricing[i][1].output}}$</span>
+        <span>/mo</span>
+      </div>
+      <div class="price-value col">
+        <span>Yearly plan</span><br>
+        <span class="amount">{{pricing[i][2].output}}$</span>
+        <span>/mo
+        </span>
+      </div>
+    </div>
+    <div class="pricing-content">
+      <ul class="content-list">
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi iure magnam natus quaerat, rerum?</li>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+        <li>Feature 4</li>
+        <li>Feature 5</li>
+      </ul>
+      <div class="pricingTable-signup">
+        <a href="#">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</div>

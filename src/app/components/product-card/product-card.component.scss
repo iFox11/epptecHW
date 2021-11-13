@@ -1,0 +1,95 @@
+$radius: 20px;
+
+//main colors
+$color1: rgb(118, 6, 48);
+$color2: rgb(31, 104, 129);
+
+//text colors
+$light-text: #fff;
+$price-text: #c3c3c3;
+
+.pricingTable {
+  background: #181a1b;
+  font-family: 'Nanum Gothic', sans-serif;
+  text-align: center;
+  padding: 20px;
+  border-radius: $radius;
+
+  .pricingTable-header {
+    color: $light-text;
+    background-color: $color1;
+    padding: 20px 0;
+    margin: 0 0 15px;
+    border-radius: $radius;
+
+    .title {
+      color: $light-text;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .price-value {
+    color: $price-text;
+    margin: 0 0 15px;
+
+
+    .amount {
+      font-size: 2.5em;
+    }
+  }
+
+  .pricing-content {
+    background-image: linear-gradient($color1, $color2);
+    padding: 0 0 25px 0;
+    border-radius: $radius;
+  }
+
+  .content-list {
+    padding: 0;
+    margin: 0 0 25px;
+    list-style: none;
+  }
+
+  .content-list {
+    li {
+      color: $light-text;
+      text-align: left;
+      padding: 15px 45px 15px 15px;
+      position: relative;
+
+      &:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+
+  .pricingTable-signup {
+    a {
+      color: #444;
+      background-color: $light-text;
+      font-size: 1.3em;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: fit-content;
+      padding: 8px 20px;
+      margin: 0 auto;
+      border-radius: $radius;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+      display: block;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $light-text;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      &:active {
+        color: $light-text;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
